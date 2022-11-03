@@ -1,0 +1,828 @@
+/* Afin de valider ton code CSS, clic sur la petite flèche en haut à droite de cette fenêtre. Pour rappel, tu peux jeter un oeil par ici pour en savoir un peu plus: https://blog.codepen.io/2017/10/11/analyze-css-now-using-stylelint/ */
+
+/* Ecris ici ton code CSS */
+
+/***********************Mise en forme générale des conteneurs les plus gros et du texte*************************/
+
+header {
+  background-image: url("./circus.jpeg");
+  background-size: 1900px;
+  height: 600px;
+  background-repeat: no-repeat;
+  background-position: 50% 20%;
+}
+
+body {
+  background: radial-gradient(ellipse at top, white, #0ff, #cfcfcf);
+  height: 3620px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #EEFEEE;
+  font-size: 23px;  
+}
+
+/*titres et items du menu en police Amatic SC*/
+
+h1, h2, h3, a {
+  font-family: Amatic SC; 
+}
+
+h1 {
+  height: 60px;
+  margin-top: 0;
+}
+
+span {
+  margin-top: 13px;
+}
+
+/**************************************************Menu du haut**************************************************/
+
+/******descend le menu au scroll********/
+.conteneur { /*espace qui contient le menu*/
+  height: 3500px;
+  margin: 0;
+  padding: 0;
+}
+
+nav {  /*pour la position sticky*/
+  position: sticky;
+  top: 0px;
+  margin: 0;
+  padding: 0;
+  z-index: 1;
+}
+
+.menualign {    
+  background-color: #233;
+  margin: 0;
+  padding: 0;
+}
+
+.menualign a:visited {
+  color:   #eef4c0;
+  margin: 0;
+  padding: 0;
+}
+
+.menualign .menu {
+  margin-left: 0;
+  padding: 0;
+}
+
+.menualign a {
+  display: inline-block;
+  color: white;
+  text-decoration: none;
+  height: 40px;
+  padding-left: 70px;
+  padding-right: 70px;
+  padding-top: 40px;
+  line-height: 5px; 
+}
+
+.menualign a:hover {	
+  background-color: #531;
+}
+
+.menu {
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+/****************************************mise en forme du titre du site********************************************/
+
+.trelement {
+  position: relative;
+  color: #ffe126;
+  text-shadow: 2px 0 0 black, 0 2px 0 black, 0 -2px 0 black, -2px 0 0 black, 2px 2px 0 black, 2px -2px 0 black, -2px 2px 0 black, -2px -2px 0 black;
+  font-weight: bold;
+  font-size: 5vw;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  text-align: center;
+}
+
+.trelement span {
+  display: inline-block;
+  position: relative;
+}
+
+/*********animation du titre************/
+#w { -webkit-animation: w 2s; animation: w 2s; }
+#i { -webkit-animation: i 6s; animation: i 6s; }
+#l { -webkit-animation: l 3s; animation: l 3s; }
+#d { -webkit-animation: d 4s; animation: d 4s; }
+#c { -webkit-animation: c 4s; animation: c 4s; }
+#ii { -webkit-animation: ii 4s; animation: ii 4s; }
+#r { -webkit-animation: r 4s; animation: r 4s; }
+#cc { -webkit-animation: cc 4s; animation: cc 4s; }
+#u { -webkit-animation: u 4s; animation: u 4s; }
+#s { -webkit-animation: s 6s; animation: s 6s; }
+#w:hover, #i:hover, #l:hover, #d:hover, #c:hover, #ii:hover, #r:hover, #cc:hover, #u:hover, #s:hover {
+-webkit-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+        transform: rotate(180deg);
+}
+
+@-webkit-keyframes w {
+  from {left: 30%;}   
+  to {left: 0%;}
+}
+@keyframes w {
+  from {left: 30%;}
+  to {left: 0%;}
+}
+@-webkit-keyframes i {
+  from {left: 10%;}
+  to {left: 0%;}
+}
+@keyframes i {
+  from {left: 10%;}
+  to {left: 0%;}
+}
+@-webkit-keyframes l {
+  from {right: -20%;}
+  to {right: 0%;}
+}
+@keyframes l {
+  from {right: -20%;}
+  to {right: 0%;}
+}
+@-webkit-keyframes d {
+  from {left: 20%;}
+  to {left: 0%;}
+}
+@keyframes d {
+  from {left: 20%;}
+  to {left: 0%;}
+}
+@-webkit-keyframes c {
+  from {right: 60%;}
+  to {right: 0%;}
+}
+@keyframes c {
+  from {right: 60%;}
+  to {right: 0%;}
+}
+@-webkit-keyframes ii {
+  from {right: 30%;}
+  to {right: 0%;}
+}
+@keyframes ii {
+  from {right: 30%;}
+  to {right: 0%;}
+}
+@-webkit-keyframes r {
+  from {left: 10%;}
+  to {left: 0%;}
+}
+@keyframes r {
+  from {left: 10%;}
+  to {left: 0%;}
+}
+@-webkit-keyframes cc {
+  from {right: 10%;}
+  to {right: 0%;}
+}
+@keyframes cc {
+  from {right: 10%;}
+  to {right: 0%;}
+}
+@-webkit-keyframes u {
+  from {left: 50%;}
+  to {left: 0%;}
+}
+@keyframes u {
+  from {left: 50%;}
+  to {left: 0%;}
+}
+@-webkit-keyframes s {
+  from {right: 20%;}
+  to {right: 0%;}
+}
+@keyframes s {
+  from {right: 20%;}
+  to {right: 0%;}
+}
+
+/**************************************Mise en forme des parties************************************/
+
+h2 {
+  color: #223333;
+  text-align: center;
+  font-size: 40px;
+  height: 70px;
+}
+
+/*************Cadre autour des titres des parties************/
+h2 span, #Prices, #About_Us, #Performances {
+  border: 4px dotted black;
+  padding: 10px;
+  background: linear-gradient(0.25turn, #f69d3c, #ebf8e1, #3f87a6);
+  border-radius: 50px;
+  opacity: 0.7;
+}
+
+/***********************Performances**************************/
+.imagesperformances img {
+  width: 300px;
+  height: 300px;
+}
+
+/*************aliger laugh dream marvel at********************/
+.align ul li {
+  display: table-cell;
+}
+
+/************centrer laugh dream marvel at********************/
+h3 {
+  text-align: center;
+  padding: 0;
+  margin: 0;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+}
+
+li p {
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+p {
+  text-align: justify;
+}
+
+/********************************************About US***********************************************/
+
+/********************Mise en forme*********************/
+.aboutcontener {   /*met le texte en forme rectangulaire au milieu*/
+  width: 500px; 
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+:/****************************Jeux About Us*************************/
+
+/*******Mise en forme********/
+body {
+  visibility: visible;   /*permet au code dans .conteneurartist de fonctionner*/
+}
+.conteneurartist {    
+  background: linear-gradient(0.25turn, #3f87a6, #ebf8e1, #f69d3c);
+  width: 900px; 
+  height: 57px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 15px; 
+  border: 4px double black;          	
+}
+
+/**texte de présentation des artistes**/
+.artistgame {  
+  margin-top: 14px;
+  background: -webkit-linear-gradient(#000000, #9ba2a6);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;              
+}
+
+/*******animation du sanglier*********/
+@-webkit-keyframes sanglierbouge {
+    51% {
+    	  -webkit-transform: translate(50px, 0px) rotate(40deg);
+    	          transform: translate(50px, 0px) rotate(40deg);
+        background-image: url("./krutan.jpg");
+        background-size: 300px;
+        background-repeat: no-repeat;
+        background-position: center;
+        border-radius: 30px; }  
+    70% { -webkit-transform: translate(2em,1em); transform: translate(2em,1em); }
+    77% { -webkit-transform: translate(2em,-1em); transform: translate(2em,-1em);}
+    87% { -webkit-transform: translate(2em,1em); transform: translate(2em,1em); }    
+    90% { -webkit-transform: translate(2em,-1em); transform: translate(2em,-1em);} 
+    95% { -webkit-transform: translate(2em,1em); transform: translate(2em,1em); }     
+    98% { -webkit-transform: translate(2em,-1em); transform: translate(2em,-1em);}    
+    100% {
+        -webkit-transform: translate(2em, 1em) rotate(-6deg);
+                transform: translate(2em, 1em) rotate(-6deg);
+        background-image: url("./krutan.jpg");
+        background-size: 300px;
+        background-position: center bottom;
+        background-repeat: no-repeat;
+        border-radius: 30px;         
+             /*texte krutan le sanglier en jaune*/                              
+        line-height: 2em;             
+        text-align: center;
+        color: greenyellow;
+        font-weight: bolder;
+        text-shadow: #000000 1px 1px, #000000 -1px 1px, #000000 -1px -1px, #000000 1px -1px;     
+        font-size: 35px;      
+        }
+    }
+
+@keyframes sanglierbouge {
+    51% {
+    	  -webkit-transform: translate(50px, 0px) rotate(40deg);
+    	          transform: translate(50px, 0px) rotate(40deg);
+        background-image: url("./krutan.jpg");
+        background-size: 300px;
+        background-repeat: no-repeat;
+        background-position: center;
+        border-radius: 30px; }  
+    70% { -webkit-transform: translate(2em,1em); transform: translate(2em,1em); }
+    77% { -webkit-transform: translate(2em,-1em); transform: translate(2em,-1em);}
+    87% { -webkit-transform: translate(2em,1em); transform: translate(2em,1em); }    
+    90% { -webkit-transform: translate(2em,-1em); transform: translate(2em,-1em);} 
+    95% { -webkit-transform: translate(2em,1em); transform: translate(2em,1em); }     
+    98% { -webkit-transform: translate(2em,-1em); transform: translate(2em,-1em);}    
+    100% {
+        -webkit-transform: translate(2em, 1em) rotate(-6deg);
+                transform: translate(2em, 1em) rotate(-6deg);
+        background-image: url("./krutan.jpg");
+        background-size: 300px;
+        background-position: center bottom;
+        background-repeat: no-repeat;
+        border-radius: 30px;         
+             /*texte krutan le sanglier en jaune*/                              
+        line-height: 2em;             
+        text-align: center;
+        color: greenyellow;
+        font-weight: bolder;
+        text-shadow: #000000 1px 1px, #000000 -1px 1px, #000000 -1px -1px, #000000 1px -1px;     
+        font-size: 35px;      
+        }
+    }
+    
+/*******animation du clown**********/    
+@-webkit-keyframes clownbouge {
+    51% {
+    	  -webkit-transform: translate(50px, 0px) rotate(40deg);
+    	          transform: translate(50px, 0px) rotate(40deg);
+        background-image: url("./clown.jpg");
+        background-size: 300px;
+        background-repeat: no-repeat;
+        background-position: center;
+        border-radius: 30px; }  
+    70% { -webkit-transform: translate(2em,1em); transform: translate(2em,1em); }
+    77% { -webkit-transform: translate(2em,-1em); transform: translate(2em,-1em);}
+    87% { -webkit-transform: translate(2em,1em); transform: translate(2em,1em); }    
+    90% { -webkit-transform: translate(2em,-1em); transform: translate(2em,-1em);} 
+    95% { -webkit-transform: translate(2em,1em); transform: translate(2em,1em); }     
+    98% { -webkit-transform: translate(2em,-1em); transform: translate(2em,-1em);}    
+    100% {
+        -webkit-transform: translate(2em, 1em) rotate(-6deg);
+                transform: translate(2em, 1em) rotate(-6deg);
+        background-image: url("./clown.jpg");
+        background-size: 300px;
+        background-position: center;
+        background-repeat: no-repeat;
+        border-radius: 30px;         
+        line-height: 2em;             
+        text-align: center;
+        color: #ffecbd;
+        font-weight: bolder;       
+        text-shadow: #000000 1px 1px, #000000 -1px 1px, #000000 -1px -1px, #000000 1px -1px;     
+        font-size: 35px;      
+        }
+    }
+    
+@keyframes clownbouge {
+    51% {
+    	  -webkit-transform: translate(50px, 0px) rotate(40deg);
+    	          transform: translate(50px, 0px) rotate(40deg);
+        background-image: url("./clown.jpg");
+        background-size: 300px;
+        background-repeat: no-repeat;
+        background-position: center;
+        border-radius: 30px; }  
+    70% { -webkit-transform: translate(2em,1em); transform: translate(2em,1em); }
+    77% { -webkit-transform: translate(2em,-1em); transform: translate(2em,-1em);}
+    87% { -webkit-transform: translate(2em,1em); transform: translate(2em,1em); }    
+    90% { -webkit-transform: translate(2em,-1em); transform: translate(2em,-1em);} 
+    95% { -webkit-transform: translate(2em,1em); transform: translate(2em,1em); }     
+    98% { -webkit-transform: translate(2em,-1em); transform: translate(2em,-1em);}    
+    100% {
+        -webkit-transform: translate(2em, 1em) rotate(-6deg);
+                transform: translate(2em, 1em) rotate(-6deg);
+        background-image: url("./clown.jpg");
+        background-size: 300px;
+        background-position: center;
+        background-repeat: no-repeat;
+        border-radius: 30px;         
+        line-height: 2em;             
+        text-align: center;
+        color: #ffecbd;
+        font-weight: bolder;       
+        text-shadow: #000000 1px 1px, #000000 -1px 1px, #000000 -1px -1px, #000000 1px -1px;     
+        font-size: 35px;      
+        }
+    }
+
+/******animation du jongleur*********/
+@-webkit-keyframes jongleurbouge {
+    51% {
+    	  -webkit-transform: translate(50px, 0px) rotate(40deg);
+    	          transform: translate(50px, 0px) rotate(40deg);
+        background-image: url("./olivier.jpg");
+        background-size: 300px;
+        background-repeat: no-repeat;
+        background-position: center;
+        border-radius: 30px; }  
+    70% { -webkit-transform: translate(2em,1em); transform: translate(2em,1em); }
+    77% { -webkit-transform: translate(2em,-1em); transform: translate(2em,-1em);}
+    87% { -webkit-transform: translate(2em,1em); transform: translate(2em,1em); }    
+    90% { -webkit-transform: translate(2em,-1em); transform: translate(2em,-1em);} 
+    95% { -webkit-transform: translate(2em,1em); transform: translate(2em,1em); }     
+    98% { -webkit-transform: translate(2em,-1em); transform: translate(2em,-1em);}    
+    100% {
+        -webkit-transform: translate(2em, 1em) rotate(-6deg);
+                transform: translate(2em, 1em) rotate(-6deg);
+        background-image: url("./olivier.jpg");
+        background-size: 300px;
+        background-position: center;
+        background-repeat: no-repeat;
+        border-radius: 30px;         
+        line-height: 2em;             
+        text-align: center;
+        color: yellow;
+        font-weight: bolder;       
+        text-shadow: #000000 1px 1px, #000000 -1px 1px, #000000 -1px -1px, #000000 1px -1px;     
+        font-size: 35px;      
+        }
+    }
+
+@keyframes jongleurbouge {
+    51% {
+    	  -webkit-transform: translate(50px, 0px) rotate(40deg);
+    	          transform: translate(50px, 0px) rotate(40deg);
+        background-image: url("./olivier.jpg");
+        background-size: 300px;
+        background-repeat: no-repeat;
+        background-position: center;
+        border-radius: 30px; }  
+    70% { -webkit-transform: translate(2em,1em); transform: translate(2em,1em); }
+    77% { -webkit-transform: translate(2em,-1em); transform: translate(2em,-1em);}
+    87% { -webkit-transform: translate(2em,1em); transform: translate(2em,1em); }    
+    90% { -webkit-transform: translate(2em,-1em); transform: translate(2em,-1em);} 
+    95% { -webkit-transform: translate(2em,1em); transform: translate(2em,1em); }     
+    98% { -webkit-transform: translate(2em,-1em); transform: translate(2em,-1em);}    
+    100% {
+        -webkit-transform: translate(2em, 1em) rotate(-6deg);
+                transform: translate(2em, 1em) rotate(-6deg);
+        background-image: url("./olivier.jpg");
+        background-size: 300px;
+        background-position: center;
+        background-repeat: no-repeat;
+        border-radius: 30px;         
+        line-height: 2em;             
+        text-align: center;
+        color: yellow;
+        font-weight: bolder;       
+        text-shadow: #000000 1px 1px, #000000 -1px 1px, #000000 -1px -1px, #000000 1px -1px;     
+        font-size: 35px;      
+        }
+    }
+
+/********animation de la trapeziste********/
+@-webkit-keyframes laurabouge {
+    51% {
+    	  -webkit-transform: translate(50px, 0px) rotate(40deg);
+    	          transform: translate(50px, 0px) rotate(40deg);
+        background-image: url("./trapeze.jpg");
+        background-size: 300px;
+        background-repeat: no-repeat;
+        background-position: center;
+        border-radius: 30px; }  
+    70% { -webkit-transform: translate(2em,1em); transform: translate(2em,1em); }
+    77% { -webkit-transform: translate(2em,-1em); transform: translate(2em,-1em);}
+    87% { -webkit-transform: translate(2em,1em); transform: translate(2em,1em); }    
+    90% { -webkit-transform: translate(2em,-1em); transform: translate(2em,-1em);} 
+    95% { -webkit-transform: translate(2em,1em); transform: translate(2em,1em); }     
+    98% { -webkit-transform: translate(2em,-1em); transform: translate(2em,-1em);}    
+    100% {
+        -webkit-transform: translate(2em, 1em) rotate(-6deg);
+                transform: translate(2em, 1em) rotate(-6deg);
+        background-image: url("./trapeze.jpg");
+        background-size: 300px;
+        background-position: center;
+        background-repeat: no-repeat;
+        border-radius: 30px;         
+        line-height: 2em;             
+        text-align: center;
+        color: #d0efff;
+        font-weight: bolder;       
+        text-shadow: #000000 1px 1px, #000000 -1px 1px, #000000 -1px -1px, #000000 1px -1px;     
+        font-size: 35px;      
+        }
+    }
+
+@keyframes laurabouge {
+    51% {
+    	  -webkit-transform: translate(50px, 0px) rotate(40deg);
+    	          transform: translate(50px, 0px) rotate(40deg);
+        background-image: url("./trapeze.jpg");
+        background-size: 300px;
+        background-repeat: no-repeat;
+        background-position: center;
+        border-radius: 30px; }  
+    70% { -webkit-transform: translate(2em,1em); transform: translate(2em,1em); }
+    77% { -webkit-transform: translate(2em,-1em); transform: translate(2em,-1em);}
+    87% { -webkit-transform: translate(2em,1em); transform: translate(2em,1em); }    
+    90% { -webkit-transform: translate(2em,-1em); transform: translate(2em,-1em);} 
+    95% { -webkit-transform: translate(2em,1em); transform: translate(2em,1em); }     
+    98% { -webkit-transform: translate(2em,-1em); transform: translate(2em,-1em);}    
+    100% {
+        -webkit-transform: translate(2em, 1em) rotate(-6deg);
+                transform: translate(2em, 1em) rotate(-6deg);
+        background-image: url("./trapeze.jpg");
+        background-size: 300px;
+        background-position: center;
+        background-repeat: no-repeat;
+        border-radius: 30px;         
+        line-height: 2em;             
+        text-align: center;
+        color: #d0efff;
+        font-weight: bolder;       
+        text-shadow: #000000 1px 1px, #000000 -1px 1px, #000000 -1px -1px, #000000 1px -1px;     
+        font-size: 35px;      
+        }
+    }
+
+/***********crée une boule********/
+figure {
+  border-radius: 50%;
+  height: 200px;
+  width: 200px;
+  background: radial-gradient(circle at 60px 60px, #9cabff, #900);  
+  margin: 0;
+  display: inline-block;
+  vertical-align: top;
+}
+
+/**aligne les boules**/
+.eclat {  
+  text-align: center;  
+ }
+
+.info h1 {
+  color: green;
+}
+
+/*met le texte des boules en justify*/
+.info {
+    text-align: center;
+}
+
+.boules {
+  padding-left: 0px;
+}
+
+/**rétrécit les boules**/
+.eclat > figure { transform: scale(.8); }
+
+/****place la boule jongleur à la bonne position****/
+.jongleur {
+  border-radius: 50%;
+  height: 200px;
+  width: 200px;
+  background: radial-gradient(circle at 60px 60px, #9cabff, #900);
+  display: inline-block;
+}
+
+/***place la boule laura à la bonne position****/
+.laura {
+  border-radius: 50%;
+  height: 200px;
+  width: 200px;
+  background: radial-gradient(circle at 60px 60px, #9cabff, #900);
+  display: inline-block;
+}
+
+/***met l'étoile sur les boules (étoile 1 boule 1 etc...)***/
+figure.etoile {	
+  background: url("etoile.png");
+  background-size: 100px;
+  background-repeat: no-repeat;
+  display: inline-block;
+}
+
+figure.etoile2 {	
+  background: url("etoile.png");
+  background-size: 100px;
+  background-repeat: no-repeat;
+  display: inline-block;
+}
+
+figure.etoile3 {	
+  background: url("etoile.png");
+  background-size: 100px;
+  background-repeat: no-repeat;
+  display: inline-block;
+}
+
+figure.etoile4 {	
+  background: url("etoile.png");
+  background-size: 100px;
+  background-repeat: no-repeat;
+  display: inline-block;
+}
+
+/****Animations au passage de la souris sur les boules*****/
+figure.rond1:hover {
+  -webkit-animation: sanglierbouge 3s linear;
+          animation: sanglierbouge 3s linear; 
+  -webkit-animation-fill-mode: forwards; 
+          animation-fill-mode: forwards;
+  border-radius: 300px;
+  display: inline-block;
+}
+
+figure.clownfond:hover {
+  -webkit-animation: clownbouge 3s linear;
+          animation: clownbouge 3s linear; 
+  -webkit-animation-fill-mode: forwards; 
+          animation-fill-mode: forwards;
+  border-radius: 300px;
+  display: inline-block;
+}
+
+figure.jongleurfond:hover {
+  -webkit-animation: jongleurbouge 3s linear;
+          animation: jongleurbouge 3s linear; 
+  -webkit-animation-fill-mode: forwards; 
+          animation-fill-mode: forwards;
+  border-radius: 300px;
+  display: inline-block;
+}
+
+figure.laurafond:hover {
+  -webkit-animation: laurabouge 3s linear;
+          animation: laurabouge 3s linear; 
+  -webkit-animation-fill-mode: forwards; 
+          animation-fill-mode: forwards;
+  border-radius: 300px;
+  display: inline-block;
+}
+
+/*****rend invisible les textes sur les boules avant l'animation*******/
+.eclat .rond1 {  	
+  display: inline-block;
+  color: transparent;
+}
+
+.eclat .clownfond {  
+  color: transparent;
+  display: inline-block;
+}
+
+.eclat .jongleurfond { 
+  color: transparent;
+  display: inline-block;
+}
+
+.eclat .laurafond { 
+  color: transparent;
+  display: inline-block;
+}
+
+/*****gifs en dessous des boules*****/
+.sanglier:hover {
+  background:url("./planete.gif");
+  background-image: cover;
+  width: 200px;
+  height: 201px;
+  display: inline-block;
+}
+
+.clown:hover {
+  background:url("./balons.gif");
+  background-image: cover;
+  width: 200px;
+  height: 201px;
+  display: inline-block;
+}
+
+.jongleur:hover {
+  background:url("./planete.gif");
+  background-image: cover;
+  width: 200px;
+  height: 201px;
+  display: inline-block;
+}
+
+.laura:hover {
+  background:url("./balons.gif");
+  background-image: cover;
+  width: 200px;
+  height: 201px;
+  display: inline-block;
+}
+
+/****textes à côté des artistes*****/
+.krutan {	
+  text-align: center;	
+  display: inline-block;
+}
+
+.textclown {	
+  text-align: center;
+  display: inline-block;
+}
+
+.textjongleur {	
+  text-align: justify;
+  display: inline-block;
+}
+
+.textlaura {	
+  text-align: justify;
+  display: inline-block;
+}
+
+/***********************************Tableau des prix**************************************/
+
+/**Mise en forme du tableau**/
+table {
+  width: 70%;
+  line-height: 300%;
+  margin: auto;
+  border: 0; /*enlève la bordure autour du tableau (enlève la case en haut à gauche)*/
+}
+
+th {
+  font-family: monospace;
+  border-style: groove;
+  border-width: 7px;  
+  background-image: radial-gradient(farthest-corner at 40px 40px, #8d9299 0%, #223333 100%); 
+  color: #f0f0c6;  
+  text-shadow: 1px 0 0 black, 0 2px 0 black, 0 -1px 0 black, -1px 0 0 black, 2px 2px 0 black, 1px -1px 0 black, -1px 1px 0 black, -1px -1px 0 black; 
+  opacity: 0.8;       
+}
+
+td {
+  font-family: sans-serif;
+  border-style: solid;
+  border-width: 1px;
+  text-align: center;
+  background-color: #fff4e6;
+}
+
+/*****************************************Contact****************************************/
+
+/******centrer*****/
+form {
+    text-align: center;
+}
+
+/****bouton send***/
+.submit {
+  background-color: #3fb6b2;
+  padding: 12px 15px;
+  cursor: pointer;
+  color: #ffffff;
+  font-weight: bold;
+  width: 90px;
+}
+
+/***bouton cancel***/
+.reset {
+  background-color: red;
+  padding: 12px 15px;
+  cursor: pointer;
+  color: #ffffff;
+  font-weight: bold;
+  width: 90px;
+}
+
+/***commentaire***/
+input, textarea {
+  margin-bottom: 10px;
+  padding: 15px 10px 10px;
+  border: 1px solid #cecece;
+  background-color: #efefef;
+  color: #787575;
+  border-radius: 5px;
+  width: 30%;
+}
+
+label {
+  display: block;
+}
+
+/**Mise en forme du pied de page**/
+footer p {
+  position: fixed; 
+  bottom: 0;
+  width: 100%;   
+  color: black;
+  text-align: center;
+  font-size: 17px;
+  margin: 0;
+  padding: 0;
+}
+

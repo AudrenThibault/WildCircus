@@ -1,0 +1,209 @@
+<!-- Afin de valider ton code HTML, clic sur la petite flèche en haut à droite de cette fenêtre. Pour rappel, tu peux jeter un oeil par ici pour en savoir un peu plus: https://blog.codepen.io/2017/10/11/analyze-css-now-using-stylelint/ -->
+<!DOCTYPE html>
+<html>
+	<head>
+	    <meta charset="UTF-8">
+	    <title>Wild Circus</title>
+	    <link rel="stylesheet" href="style.css" />
+	    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />         
+	</head>
+	<body>
+	<span id="home"></span>
+	
+	<!----------------------------- Titre du site animé ----------------------------------> 
+	
+	    <header>
+		      <h1 class="trelement">
+		        <span id="w">W</span>
+		        <span id="i">i</span>
+		        <span id="l">l</span> 
+		        <span id="d">d&nbsp;</span>
+		        <span id="c">C</span>
+		        <span id="ii">i</span>
+		        <span id="r">r</span>
+		        <span id="cc">c</span>
+		        <span id="u">u</span>
+		        <span id="s">s</span>
+		      </h1>
+		      
+	<!-- -------------------------------Liens du menu----------------------------------- -->
+		      
+		      <div class="conteneur">
+			      <nav>
+			         <div class="menualign">
+			            <div class="menu">
+			            <!-- TODO: Les liens du menu doivent nous emmener vers les sections correspondantes dans la page --> 
+			               <a href="#home">Home</a>         
+			               <a href="#perfup">Performances</a>
+                    <a href="#Aboutup">About&nbsp;Us</a>
+			               <a href="#Priceup">Prices</a>
+			               <a href="#Contactup">Contact</a>
+			            </div>
+			         </div>
+			      </nav>
+		      </div>
+	    </header>
+	<hr/>  <!-- ligne horizontale -->	 
+	   
+	<!-- -------------------------------Performances----------------------------------- -->	    
+	    
+	    <section>	  
+	    	  <a id="perfup"><br/><br/><br/></a>   <!-- permet d'arriver avec le menu du haut au dessus du titre des parties et pas par dessus -->
+		     <h2><a id="Performances">Performances<a/></h2>		      
+	      <!-- TODO: En utilisant du css place ces trois performances ("lough", "dream, "marvel at") sur la même ligne en enlevant le point généré par la balise "li". Attention, utilise bien le css pour aligner les éléments, tu ne dois pas enlever les balises "li"-->
+	        <div class="align">
+	           <ul>
+	        <!-- performance 1 -->
+	              <li>
+	                 <h3>Laugh<br/><br/>
+		                 <span class="imagesperformances">
+		                    <img src="./clown.jpeg" alt="laugh">
+		                 </span>
+	                 </h3>
+	                 <p>As an adult, come and discover our irresistible clowns, between practical jokes and pranks let yourself be carried away by their joy and fall back into childhood.</p>
+	              </li>
+	        <!-- performance 2 -->
+	              <li>
+	                 <h3>Dream<br/><br/>
+		                 <span class="imagesperformances">
+		                    <img src="./balons.jpg" alt="dream">                 
+		                 </span>
+	                 </h3>
+	                 <p>Let yourself be carried away in a world where the real and the imaginary are one, in the company of our talented magicians, discover a wonderful world limited only by your imagination.</p>
+	              </li>
+	         <!-- performance 3 -->
+	              <li>
+	                 <h3>Marvel at<br/><br/>
+		                 <span class="imagesperformances">
+		                    <img src="./cat.jpg" alt="cat">
+		                 </span>                                     
+	                 </h3>
+	                 <p>Tame the untameable in the company of our tamers, between roar and razor-sharp claws, watch these fierce felines turn into sweet kittens.</p>
+	              </li>
+	           </ul>
+	        </div>
+	    </section>
+
+	<!-- -------------------------------About Us----------------------------------- -->	    
+	
+	    <section class="aboutcontener">
+	        <a id="Aboutup"><br/><br/><br/></a>
+        <h2><a id="About_Us">About Us</a></h2>
+	      <!-- TODO: Cette section n'a pas encore été réalisée, tu as carte blanche pour nous montrer ta créativité -->
+	        <p>We are a famous company which travels all over the world. We are in a hurry to meet you!
+			  We have incredibly elephants, tigers, magicians, musical spectacles and much more! 
+			  You can discover more about our team below!
+			  </p>	 
+	    </section>
+        
+<!-- --------------------------------Jeux About Us---------------------------------- -->
+        
+		<div class="conteneurartist">
+			<h3 class="artistgame">Find our artists which are hiding in juggling balls!</h3>
+		</div>
+		
+ <!-- -------------------------------------------Boules 3d------------------------------------------- -->
+        
+       <div class="eclat"><br/><br/>         
+		  		 <figure class="sanglier">   
+		  			  <figure class="rond1">Krutan the boar!</>
+		  				  <figure class="etoile"></figure>        
+		  			  </figure>
+              <div class="info">
+                <h1>Krutan</h1> is a boar that has been trained to jump into a circle of fire!
+              </div>
+		  		</figure>	
+		  		<figure class="clown">     
+		  			  <figure class="clownfond">Spoon the clown!
+		  				  <figure class="etoile2"></figure>
+		  			  </figure>
+              <div class="info">   
+                <h1>Spoon</h1> is a crazy clown who will make the whole family laugh!
+              </div>  
+		  		</figure>	
+		  		<figure class="jongleur">
+		  		    <figure class="jongleurfond">Oliver the juggler!
+		  				    <figure class="etoile3"></figure>
+		  			  </figure>
+              <div class="info">   
+                  <h1>Oliver</h1> our luminous juggler will take you to another world!
+              </div> 
+		  		</figure>	
+		  		<figure class="laura">
+		 			    <figure class="laurafond">Laura the trapeze artist!
+		 				      <figure class="etoile4"></figure>
+		 			    </figure>
+              <div class="info">   
+                  <h1>Laura</h1> is a captivating trapeze artist. Embark on the country of hypnotic high aerobatics!
+             </div> 
+		  		</figure>
+       </div>	
+
+	<!-- --------------------------------Prices------------------------------------- -->	  
+  
+	  <br/><br/><br/><br/><br/><br/>
+	    <section>
+	        <a id="Priceup"><br/><br/><br/></a>
+	        <h2><a id="Prices">Prices<a/></h2>
+	      <!-- TODO:  Réalise un tableau qui présente les différents prix. Exemple (aggrandis la fenêtre en largeur pour bien voir l'exemple ci-dessous) :
+	
+	                                | Adultes | Enfants de moins de 12 ans | Groupes (plus de 10 personnes) | Ecoles
+	        Semaines hors mercredi  |         |                         |                                |
+	        week-end et mercredi    |         |                         |                                |
+	      -->
+		     <table border="1" style="empty-cells: hide">
+		        <tr>
+		           <th></th>
+		           <th>Adults</th>
+		           <th>Children under 12</th>
+		           <th>Groups (over 10)</th>
+		           <th>Schools</th>
+		        </tr>
+		        <tr>
+		           <th>week off Wednesday</th>
+		           <td>4€</td>
+		           <td>2€</td>
+		           <td>3€ per person</td>
+		           <td>2€ per person</td>
+		        </tr>
+		        <tr>
+		           <th>weekend and Wednesday</th>
+		           <td>3€</td>
+		           <td>2€</td>
+		           <td>2€ per person</td>
+		           <td>2€ per person</td>
+		        </tr>
+		     </table>
+	    </section>
+
+	<!-- -------------------------------Contact----------------------------------- -->	    
+
+	    <section>
+		      <a id="Contactup"><br/><br/><br/></a>
+		      <h2><span id="Contact">Contact Us</span></h2>
+		      <!-- TODO: Réalise un formulaire de contact avec les champs email et message plus un bouton pour envoyer le message. Pense bien à ajouter les labels pour les différents champs
+		        Ce formulaire n'a pas besoin d'être fonctionnel, réalise juste la mise en forme.-->    
+	         <form action="mapage.php" method="post">
+	              <label for="email">Your email :</label>
+	              <input type="text" id="email" placeholder="exemple@gmail.com">
+	              <label for="commments">Your comments :</label>
+	              <textarea rows="6" cols="0" name="comments" id="comments" placeholder="Write something..."></textarea></br>
+	              <input type="submit" class="submit" value="Send">
+	              <input type="reset" class="reset" value="Cancel">
+	         </form>
+	    </section>
+	
+	    <footer>
+	      <!-- TODO: Entre ton nom et prénom.
+	        Mets en place un lien vers le site de la Wild Code School (https://wildcodeschool.fr).
+	        Tu peux egalement mettre un lien sur ton nom vers ton site, ton blog ou ton profil github ou linkedin, si tu en a un.
+	       -->
+	      <p>Wild Circus by [<a href="http://maz-hoot.e-monsite.com/">Audren THIBAULT<a/>]
+	       - France-IOI: [<a href="http://www.france-ioi.org/user/perso.php?sLogin=audren9">Profil France-IOI</a>]
+	       - SoloLearn: [<a href="https://www.sololearn.com/Profile/9310026">Profil Sololearn<a/>]        
+	       - <a href="https://wildcodeschool.fr/">Wild Code School<a/> - [14 Juillet 2018]
+	      </p>
+	    </footer>
+	</body>
+</html>
